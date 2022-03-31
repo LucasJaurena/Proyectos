@@ -1,1 +1,1 @@
-Es un programa que cuenta con las funciones simples de una Calculadora.
+Es un programa desarrollado en el lenguaje C, que cuenta con las funciones simples de una Calculadora.
