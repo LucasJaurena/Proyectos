@@ -251,7 +251,7 @@ int cargarPeliculasBin(eMovie* movies, int tam)
     }
     else
     {
-        printf("\Error!! no hay espacio en memoria!!\n");
+        printf("\nError!! no hay espacio en memoria!!\n");
     }
 
     return retorno;
