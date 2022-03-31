@@ -1,1 +1,1 @@
-Es un proyecto para un curso de programacion desarrollado en el lenguaje KOTLIN, el cual consiste en varios juegos de Dados para celulares.
+Es un proyecto desarrollado en el lenguaje KOTLIN, el cual consiste en varios juegos de Dados para celulares.
