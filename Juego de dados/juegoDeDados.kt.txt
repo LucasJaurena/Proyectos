@@ -1,0 +1,87 @@
+package com.example.dados
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.transition.Visibility
+import android.view.View
+import android.widget.RadioButton
+import android.widget.TextView
+import android.widget.Toast
+import kotlin.random.Random
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        var rb_PaseIng = findViewById<View>(R.id.rb_PaseIngles) as RadioButton
+        var rb_Genera = findViewById<View>(R.id.rb_Generala) as RadioButton
+        var rb_MilCin = findViewById<View>(R.id.rb_MilCincuenta) as RadioButton
+        var tv_Juego = findViewById<View>(R.id.tv_Titulo) as TextView
+        var tv_D1 = findViewById<View>(R.id.tv_Dado1) as TextView
+        var tv_D2 = findViewById<View>(R.id.tv_Dado2) as TextView
+        var tv_D3 = findViewById<View>(R.id.tv_Dado3) as TextView
+        var tv_D4 = findViewById<View>(R.id.tv_Dado4) as TextView
+        var tv_D5 = findViewById<View>(R.id.tv_Dado5) as TextView
+        var dado1 :Int
+        var dado2 :Int
+        var dado3 :Int
+        var dado4 :Int
+        var dado5 :Int
+
+        findViewById<View>(R.id.bt_Jugar).setOnClickListener(View.OnClickListener {
+            if(rb_PaseIng.isChecked() == false && rb_Genera.isChecked() == false && rb_MilCin.isChecked() == false){
+                Toast.makeText(this, "¡Por favor elija un juego antes de comenzar!", Toast.LENGTH_LONG).show()
+            }
+            if(rb_PaseIng.isChecked() == true){
+                tv_Juego.setText("Pase Ingles")
+                tv_D3.setVisibility(View.INVISIBLE)
+                tv_D4.setVisibility(View.INVISIBLE)
+                tv_D5.setVisibility(View.INVISIBLE)
+                dado1 = Random.nextInt(1,6)
+                dado2 = Random.nextInt(1,6)
+                tv_D1.setText("Dado 1:\n     $dado1").toString()
+                tv_D1.setVisibility(View.VISIBLE)
+                tv_D2.setText("Dado 2:\n     $dado2").toString()
+                tv_D2.setVisibility(View.VISIBLE)
+            }
+            if(rb_Genera.isChecked() == true){
+                tv_Juego.setText("Generala")
+                dado1 = Random.nextInt(1,6)
+                dado2 = Random.nextInt(1,6)
+                dado3 = Random.nextInt(1,6)
+                dado4 = Random.nextInt(1,6)
+                dado5 = Random.nextInt(1,6)
+                tv_D1.setText("Dado 1:\n     $dado1").toString()
+                tv_D1.setVisibility(View.VISIBLE)
+                tv_D2.setText("Dado 2:\n     $dado2").toString()
+                tv_D2.setVisibility(View.VISIBLE)
+                tv_D3.setText("Dado 3:\n     $dado3").toString()
+                tv_D3.setVisibility(View.VISIBLE)
+                tv_D4.setText("Dado 4:\n     $dado4").toString()
+                tv_D4.setVisibility(View.VISIBLE)
+                tv_D5.setText("Dado 5:\n     $dado5").toString()
+                tv_D5.setVisibility(View.VISIBLE)
+            }
+            if(rb_MilCin.isChecked() == true){
+                tv_Juego.setText("Mil Cincuenta")
+                dado1 = Random.nextInt(1,6)
+                dado2 = Random.nextInt(1,6)
+                dado3 = Random.nextInt(1,6)
+                dado4 = Random.nextInt(1,6)
+                dado5 = Random.nextInt(1,6)
+                tv_D1.setText("Dado 1:\n     $dado1").toString()
+                tv_D1.setVisibility(View.VISIBLE)
+                tv_D2.setText("Dado 2:\n     $dado2").toString()
+                tv_D2.setVisibility(View.VISIBLE)
+                tv_D3.setText("Dado 3:\n     $dado3").toString()
+                tv_D3.setVisibility(View.VISIBLE)
+                tv_D4.setText("Dado 4:\n     $dado4").toString()
+                tv_D4.setVisibility(View.VISIBLE)
+                tv_D5.setText("Dado 5:\n     $dado5").toString()
+                tv_D5.setVisibility(View.VISIBLE)
+            }
+        })
+
+    }
+}
