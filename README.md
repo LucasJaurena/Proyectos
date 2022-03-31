@@ -1,2 +1,2 @@
 # Proyectos
-Algunos proyectos en los que trabajé de la facultad y/o personales
+Estos son algunos proyectos en los que trabajé de la facultad y/o personales
