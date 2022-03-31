@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1491546265 source:c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1_cascara\tp_1_cascara\funcionesdelacalculadora.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesDeLaCalculadora.h"
+
+1491543631 c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1_cascara\tp_1_cascara\funcionesdelacalculadora.h
+
+1491546199 source:c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1_cascara\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesDeLaCalculadora.h"
+
+1491543752 c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1_cascara\tp_1_cascara\funciones.h
+
+1491599089 source:c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1 jaurena.lucas.adrian.1c laboratorio i y programacion i\tp_1_cascara\funcionesdelacalculadora.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesDeLaCalculadora.h"
+
+1491603393 c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1 jaurena.lucas.adrian.1c laboratorio i y programacion i\tp_1_cascara\funcionesdelacalculadora.h
+
+1491603393 source:c:\users\lucas\desktop\cosas de programacion i y laboratorio i\a-tps\tp1 fecha de entrega 07-04-017 (por git hub)\tp_1 jaurena.lucas.adrian.1c laboratorio i y programacion i\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesDeLaCalculadora.h"
+
+1496442702 source:c:\users\lucas\downloads\tp_laboratorio_1-master\tp_laboratorio_1-master\tp_1 jaurena.lucas.adrian.1c laboratorio i y programacion i\funcionesdelacalculadora.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesDeLaCalculadora.h"
+
+1496442702 c:\users\lucas\downloads\tp_laboratorio_1-master\tp_laboratorio_1-master\tp_1 jaurena.lucas.adrian.1c laboratorio i y programacion i\funcionesdelacalculadora.h
+
+1504910317 source:c:\users\lucas\downloads\tp_laboratorio_1-master\tp_laboratorio_1-master\tp_1 jaurena.lucas.adrian.1c laboratorio i y programacion i\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesDeLaCalculadora.h"
+
