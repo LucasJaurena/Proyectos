@@ -1,0 +1,1 @@
+Es un proyecto para un curso de programacion desarrollado en el lenguaje KOTLIN, el cual consiste en generar un Token con datos aleatorios ingresando la informacion pedida.

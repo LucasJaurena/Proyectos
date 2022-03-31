@@ -1,0 +1,77 @@
+import kotlin.random.Random
+
+class Tocken{
+    var nombreYapellido :String = ""
+    var dni :String = ""
+    var fechaDeNacimiento :String = ""
+
+    fun inicializar(nombreYapeliido :String, dni :String, fechaDeNacimiento :String){
+        this.nombreYapellido = nombreYapeliido
+        this.dni = dni
+        this.fechaDeNacimiento = fechaDeNacimiento
+    }
+    fun generarTocken(cantCaracteres :Int) :String{
+        var tockenFinal :String = ""
+        var tockenCharacter :Int = 0
+        for (i in 0..127){
+            for(j in 0..cantCaracteres-1){
+                tockenCharacter= Random.nextInt(35)
+            }
+            when (tockenCharacter) {
+                0 -> tockenFinal+="0"
+                1 -> tockenFinal+="1"
+                2 -> tockenFinal+="2"
+                3 -> tockenFinal+="3"
+                4 -> tockenFinal+="4"
+                5 -> tockenFinal+="5"
+                6 -> tockenFinal+="6"
+                7 -> tockenFinal+="7"
+                8 -> tockenFinal+="8"
+                9 -> tockenFinal+="9"
+                10 -> tockenFinal+="A"
+                11 -> tockenFinal+="B"
+                12 -> tockenFinal+="C"
+                13 -> tockenFinal+="D"
+                14 -> tockenFinal+="E"
+                15 -> tockenFinal+="F"
+                16 -> tockenFinal+="G"
+                17 -> tockenFinal+="H"
+                18 -> tockenFinal+="I"
+                19 -> tockenFinal+="J"
+                20 -> tockenFinal+="K"
+                21 -> tockenFinal+="L"
+                22 -> tockenFinal+="M"
+                23 -> tockenFinal+="N"
+                24 -> tockenFinal+="O"
+                25 -> tockenFinal+="P"
+                26 -> tockenFinal+="Q"
+                27 -> tockenFinal+="R"
+                28 -> tockenFinal+="S"
+                29 -> tockenFinal+="T"
+                30 -> tockenFinal+="U"
+                31 -> tockenFinal+="V"
+                32 -> tockenFinal+="W"
+                33 -> tockenFinal+="X"
+                34 -> tockenFinal+="Y"
+                35 -> tockenFinal+="Z"
+            }
+        }
+        return tockenFinal
+    }
+}
+
+fun main(){
+    var tocken1 :Tocken = Tocken()
+    var cantCaracteres :Int = 0
+    var tockenFinal :String = ""
+    print("Ingrese el nombre y apellido: ")
+    var nombreApellido = readLine()!!.toString()
+    print("Ingrese el DNI: ")
+    var dni = readLine()!!.toString()
+    print("Ingrese la fecha de nacimiento: ")
+    var fechaNacimiento = readLine()!!.toString()
+    tocken1.inicializar(nombreApellido, dni, fechaNacimiento)
+    cantCaracteres = (nombreApellido.length) + (dni.length) + (fechaNacimiento.length)
+    tockenFinal = tocken1.generarTocken(cantCaracteres)
+    print("El tocken generado es: $tockenFinal")
+}
